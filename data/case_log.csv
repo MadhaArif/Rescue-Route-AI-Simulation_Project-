@@ -1,0 +1,208 @@
+sim_time_seconds,case_id,event_type,severity,ambulance_id,hospital,eta_to_patient_min,eta_to_hospital_min,total_eta_min,optimized_route_min,normal_route_min,outcome
+4.13,3,Critical Patient,5,A2,NorthCare Hospital,3.14,2.9,6.04,2.9,2.9,Saved
+4.7,1,Critical Patient,5,A1,City General Hospital,4.26,1.45,5.71,5.15,5.15,Saved
+8.93,2,Heart Attack,5,A3,NorthCare Hospital,3.71,9.03,12.73,3.45,3.45,Saved
+20.43,5,Fire Injury,4,A3,City General Hospital,1.71,5.92,7.64,1.61,1.61,Saved
+21.4,4,Fire Injury,4,A2,City General Hospital,5.01,9.88,14.88,5.31,7.15,Saved
+29.83,7,Accident,4,A1,No hospital available,1.07,0.0,1.07,0.0,0.0,Delayed
+31.93,6,Minor Injury,2,A3,City General Hospital,3.56,6.85,10.41,3.86,3.86,Saved
+11.59,1,Critical Patient,5,A1,City General Hospital,4.26,1.45,5.71,5.15,5.15,Saved
+20.91,2,Accident,4,A3,NorthCare Hospital,5.69,1.61,7.3,6.65,6.68,Saved
+26.2,3,Fire Injury,4,A2,NorthCare Hospital,6.8,1.45,8.25,6.51,inf,Saved
+44.28,4,Fire Injury,4,A3,City General Hospital,5.69,11.68,17.37,6.17,6.45,Saved
+49.39,5,Fire Injury,4,A1,City General Hospital,5.69,9.11,14.8,6.26,6.45,Saved
+51.88,6,Accident,4,A2,NorthCare Hospital,3.46,5.96,9.42,3.1,3.1,Saved
+57.55,7,Critical Patient,5,A3,City General Hospital,3.36,6.29,9.65,3.06,3.06,Saved
+66.14,8,Critical Patient,5,A2,NorthCare Hospital,1.65,8.21,9.86,1.61,1.61,Saved
+73.33,9,Fire Injury,4,A3,NorthCare Hospital,7.27,2.9,10.17,6.99,7.18,Saved
+81.9,10,Heart Attack,5,A1,NorthCare Hospital,7.39,3.23,10.62,8.06,8.06,Saved
+86.57,11,Heart Attack,5,A3,NorthCare Hospital,4.16,3.06,7.23,5.2,5.2,Saved
+98.65,13,Heart Attack,5,A3,NorthCare Hospital,4.25,2.5,6.75,4.31,4.31,Saved
+104.43,12,Accident,4,A2,City General Hospital,17.81,9.5,27.31,13.71,13.71,Delayed
+112.97,14,Heart Attack,5,A1,NorthCare Hospital,7.78,7.58,15.35,8.17,8.17,Saved
+115.68,15,Fire Injury,4,A3,City General Hospital,3.24,9.06,12.31,2.9,2.9,Saved
+121.36,16,Accident,4,A2,City General Hospital,3.48,7.9,11.38,3.06,3.1,Saved
+131.1,17,Fire Injury,4,A3,City General Hospital,5.25,7.34,12.59,5.95,5.95,Saved
+139.18,18,Minor Injury,2,A2,NorthCare Hospital,5.41,6.62,12.03,4.51,4.55,Saved
+144.59,19,Critical Patient,5,A3,NorthCare Hospital,2.57,5.06,7.63,2.5,2.5,Saved
+156.7,20,Minor Injury,2,A1,NorthCare Hospital,10.43,2.25,12.68,12.74,13.26,Saved
+157.43,21,Accident,4,A2,NorthCare Hospital,1.85,5.95,7.8,1.45,1.45,Saved
+164.61,22,Fire Injury,4,A3,City General Hospital,1.85,4.67,6.53,1.45,1.45,Saved
+176.58,23,Fire Injury,4,A1,City General Hospital,5.69,5.86,11.55,6.17,8.85,Saved
+179.83,24,Critical Patient,5,A3,NorthCare Hospital,4.16,3.86,8.02,3.92,3.92,Saved
+186.41,25,Accident,4,A2,NorthCare Hospital,1.85,6.45,8.31,1.45,1.45,Saved
+193.87,26,Accident,4,A3,NorthCare Hospital,6.59,1.45,8.04,6.29,7.88,Saved
+200.85,27,Accident,4,A2,City General Hospital,5.31,5.54,10.85,5.56,5.6,Saved
+206.7,28,Critical Patient,5,A1,City General Hospital,1.65,6.66,8.32,1.61,1.61,Saved
+213.84,29,Heart Attack,5,A3,NorthCare Hospital,2.22,8.99,11.21,2.0,2.0,Saved
+226.65,30,Accident,4,A2,City General Hospital,10.49,7.9,18.4,10.24,10.24,Saved
+229.2,31,Heart Attack,5,A3,NorthCare Hospital,6.59,1.45,8.04,7.09,12.12,Saved
+236.02,32,Minor Injury,2,A1,NorthCare Hospital,8.16,1.61,9.77,7.54,9.11,Saved
+240.99,33,Fire Injury,4,A3,City General Hospital,5.01,1.61,6.62,4.51,4.55,Saved
+252.13,34,Accident,4,A2,City General Hospital,5.47,4.84,10.31,5.56,5.56,Saved
+259.82,35,Accident,4,A1,NorthCare Hospital,1.07,8.95,10.01,0.0,0.0,Saved
+266.17,36,Accident,4,A3,City General Hospital,1.85,5.76,7.62,1.45,1.45,Saved
+275.2,37,Fire Injury,4,A2,City General Hospital,1.07,10.04,11.1,0.0,0.0,Saved
+291.34,39,Critical Patient,5,A1,NorthCare Hospital,5.0,4.11,9.11,5.72,5.72,Saved
+291.79,38,Accident,4,A3,NorthCare Hospital,8.13,7.9,16.03,8.62,10.98,Saved
+301.06,40,Minor Injury,2,A2,City General Hospital,8.31,6.01,14.32,9.91,9.91,Saved
+305.35,41,Minor Injury,2,A3,NorthCare Hospital,6.45,5.15,11.6,6.42,6.42,Saved
+18351.87,42,Accident,4,A1,NorthCare Hospital,9.43,2.25,11.67,9.65,9.65,Saved
+18354.45,43,Accident,4,A3,NorthCare Hospital,4.22,3.86,8.08,3.92,3.92,Saved
+18357.18,44,Critical Patient,5,A2,City General Hospital,5.22,6.42,11.64,4.67,5.6,Saved
+18366.68,45,Accident,4,A3,City General Hospital,5.31,2.25,7.56,5.56,inf,Saved
+18375.68,46,Accident,4,A1,NorthCare Hospital,8.44,6.2,14.64,8.29,10.89,Saved
+18381.27,47,Heart Attack,5,A3,NorthCare Hospital,3.36,8.37,11.73,3.86,6.05,Saved
+18391.94,49,Fire Injury,4,A1,City General Hospital,6.8,1.45,8.25,7.31,inf,Saved
+18395.69,48,Accident,4,A2,City General Hospital,17.81,8.76,26.57,13.68,13.68,Delayed
+18398.64,50,Minor Injury,2,A3,City General Hospital,3.46,3.58,7.04,3.1,3.1,Saved
+18408.28,51,Fire Injury,4,A1,City General Hospital,5.31,6.51,11.82,4.67,4.81,Saved
+18412.49,52,Fire Injury,4,A2,NorthCare Hospital,2.27,5.96,8.23,2.0,2.0,Saved
+18423.25,53,Heart Attack,5,A3,NorthCare Hospital,3.14,8.06,11.2,3.7,3.7,Saved
+18431.43,54,Minor Injury,2,A1,City General Hospital,3.56,6.81,10.37,3.06,3.06,Saved
+18440.62,55,Fire Injury,4,A2,City General Hospital,2.63,8.42,11.05,2.5,2.5,Saved
+18446.6,56,Critical Patient,5,A3,NorthCare Hospital,9.23,4.35,13.58,8.58,8.58,Delayed
+18448.78,57,Critical Patient,5,A1,City General Hospital,3.14,2.9,6.04,2.9,2.9,Saved
+18457.3,58,Critical Patient,5,A2,NorthCare Hospital,3.71,5.31,9.02,3.45,3.45,Saved
+18462.72,59,Heart Attack,5,A3,NorthCare Hospital,4.12,5.56,9.68,4.56,4.56,Saved
+18477.29,60,Fire Injury,4,A1,City General Hospital,8.84,8.26,17.11,9.31,9.54,Saved
+18477.29,61,Minor Injury,2,A3,City General Hospital,4.02,4.67,8.7,3.55,3.55,Saved
+18489.55,63,Accident,4,A3,NorthCare Hospital,4.41,1.61,6.02,4.31,4.31,Saved
+18490.03,62,Heart Attack,5,A2,NorthCare Hospital,5.43,9.48,14.9,6.33,6.33,Saved
+18503.2,64,Critical Patient,5,A1,NorthCare Hospital,6.83,5.95,12.78,7.47,8.82,Saved
+18507.22,65,Heart Attack,5,A3,NorthCare Hospital,1.04,6.81,7.85,0.0,0.0,Saved
+18518.7,67,Minor Injury,2,A3,City General Hospital,1.18,5.06,6.25,0.0,0.0,Saved
+18520.14,66,Critical Patient,5,A2,City General Hospital,3.46,6.81,10.27,3.23,3.23,Saved
+18528.07,68,Critical Patient,5,A3,NorthCare Hospital,2.65,4.5,7.15,2.31,2.31,Saved
+18538.9,69,Heart Attack,5,A1,NorthCare Hospital,5.62,5.72,11.34,5.38,5.56,Saved
+18540.94,70,Fire Injury,4,A3,City General Hospital,1.85,3.92,5.78,1.45,1.45,Saved
+18555.58,71,Critical Patient,5,A2,City General Hospital,12.01,4.31,16.33,10.86,inf,Delayed
+18556.18,72,Accident,4,A1,City General Hospital,3.24,2.9,6.14,2.9,2.9,Saved
+18567.15,73,Accident,4,A3,NorthCare Hospital,6.77,9.66,16.43,6.08,6.08,Saved
+18575.13,75,Accident,4,A2,NorthCare Hospital,4.44,1.45,5.89,5.15,5.15,Saved
+18575.5,74,Fire Injury,4,A1,City General Hospital,6.67,7.14,13.8,8.45,8.45,Saved
+18588.36,76,Accident,4,A3,NorthCare Hospital,4.19,7.34,11.53,5.03,5.03,Saved
+18591.36,77,Critical Patient,5,A1,City General Hospital,7.85,3.23,11.07,7.21,7.21,Saved
+18596.03,78,Heart Attack,5,A2,NorthCare Hospital,2.22,6.76,8.98,2.0,2.0,Saved
+18598.83,79,Heart Attack,5,A3,City General Hospital,3.36,2.31,5.67,3.95,inf,Saved
+18607.9,80,Critical Patient,5,A1,City General Hospital,6.89,3.92,10.81,6.83,8.66,Saved
+18611.56,81,Accident,4,A3,NorthCare Hospital,4.41,3.95,8.36,4.31,4.31,Saved
+18620.18,82,Heart Attack,5,A2,NorthCare Hospital,4.86,4.51,9.37,4.51,6.35,Saved
+18631.17,83,Accident,4,A3,NorthCare Hospital,4.22,4.75,8.96,3.92,3.92,Saved
+18636.23,84,Critical Patient,5,A1,City General Hospital,7.85,2.31,10.17,7.6,7.6,Saved
+18643.46,85,Fire Injury,4,A3,City General Hospital,2.12,4.81,6.93,2.25,2.25,Saved
+18652.88,86,Accident,4,A1,NorthCare Hospital,5.47,7.18,12.65,5.0,5.0,Saved
+18658.65,87,Critical Patient,5,A3,City General Hospital,3.71,6.61,10.32,4.55,4.55,Saved
+18668.77,88,Accident,4,A2,NorthCare Hospital,2.63,9.1,11.72,2.5,2.5,Saved
+18675.45,89,Heart Attack,5,A1,NorthCare Hospital,2.57,11.32,13.89,2.5,2.5,Saved
+18685.85,90,Fire Injury,4,A3,City General Hospital,4.41,10.44,14.84,4.31,4.31,Saved
+18693.05,91,Minor Injury,2,A2,NorthCare Hospital,4.87,6.12,11.0,4.31,4.31,Saved
+18702.45,93,Heart Attack,5,A3,NorthCare Hospital,1.74,7.0,8.74,1.45,1.45,Saved
+18704.18,92,Minor Injury,2,A1,City General Hospital,10.61,7.34,17.95,12.11,12.63,Saved
+18713.58,94,Critical Patient,5,A2,NorthCare Hospital,8.09,5.31,13.4,9.83,10.05,Delayed
+18719.53,96,Minor Injury,2,A1,City General Hospital,7.63,1.45,9.08,5.95,5.95,Saved
+18719.97,95,Minor Injury,2,A3,NorthCare Hospital,6.45,5.15,11.6,5.54,5.54,Saved
+18724.14,97,Critical Patient,5,A2,NorthCare Hospital,1.04,6.6,7.63,0.0,0.0,Saved
+18732.31,98,Fire Injury,4,A3,City General Hospital,3.48,7.17,10.65,3.06,3.95,Saved
+18749.25,101,Heart Attack,5,A3,City General Hospital,3.46,2.9,6.36,3.23,3.23,Saved
+18749.79,100,Fire Injury,4,A1,City General Hospital,7.83,3.95,11.78,9.01,inf,Saved
+18750.22,99,Heart Attack,5,A2,NorthCare Hospital,3.46,12.33,15.78,3.23,3.23,Saved
+18760.4,102,Fire Injury,4,A3,NorthCare Hospital,5.31,3.86,9.17,4.67,7.28,Saved
+18764.62,103,Critical Patient,5,A1,City General Hospital,5.62,4.31,9.93,6.26,7.05,Saved
+18769.27,104,Accident,4,A2,NorthCare Hospital,3.82,6.2,10.02,4.25,4.25,Saved
+18776.48,105,Critical Patient,5,A3,NorthCare Hospital,5.22,4.75,9.96,4.67,inf,Saved
+18782.31,106,Critical Patient,5,A2,NorthCare Hospital,6.63,2.5,9.13,7.95,7.95,Saved
+18788.95,107,Heart Attack,5,A3,City General Hospital,4.86,1.61,6.47,5.31,inf,Saved
+18795.78,108,Critical Patient,5,A1,City General Hospital,1.04,7.39,8.43,0.0,0.0,Saved
+18802.21,109,Accident,4,A3,NorthCare Hospital,4.41,2.5,6.91,4.31,4.31,Saved
+18816.57,110,Heart Attack,5,A2,NorthCare Hospital,3.46,13.18,16.64,4.11,4.11,Saved
+18818.72,111,Critical Patient,5,A3,NorthCare Hospital,2.65,4.67,7.32,2.31,2.31,Saved
+18830.89,112,Fire Injury,4,A1,NorthCare Hospital,10.97,2.25,13.22,10.6,inf,Saved
+18831.73,113,Accident,4,A3,City General Hospital,1.71,3.76,5.47,1.61,1.61,Saved
+18842.83,114,Heart Attack,5,A3,NorthCare Hospital,1.74,7.38,9.12,1.45,1.45,Saved
+18854.28,115,Heart Attack,5,A1,NorthCare Hospital,1.04,12.76,13.8,0.0,0.0,Saved
+18858.93,116,Heart Attack,5,A3,NorthCare Hospital,3.14,5.72,8.86,2.9,2.9,Saved
+18870.98,117,Heart Attack,5,A2,City General Hospital,11.36,3.7,15.06,12.87,13.48,Delayed
+18871.28,118,Heart Attack,5,A3,City General Hospital,2.22,3.86,6.08,2.0,2.0,Saved
+18886.93,119,Accident,4,A1,City General Hospital,7.81,5.56,13.37,8.01,8.01,Saved
+18891.13,120,Accident,4,A3,NorthCare Hospital,3.48,7.9,11.38,3.06,3.95,Saved
+18901.23,121,Minor Injury,2,A2,NorthCare Hospital,6.52,5.92,12.44,6.81,6.81,Saved
+18907.85,122,Heart Attack,5,A1,NorthCare Hospital,9.86,5.96,15.83,10.97,11.5,Delayed
+18909.34,123,Critical Patient,5,A3,City General Hospital,4.86,5.72,10.58,5.31,7.15,Saved
+18913.52,124,Fire Injury,4,A2,City General Hospital,1.07,8.95,10.01,0.0,0.0,Saved
+18920.79,125,Heart Attack,5,A3,City General Hospital,5.22,2.25,7.46,5.56,7.4,Saved
+18932.17,127,Heart Attack,5,A3,NorthCare Hospital,1.65,6.92,8.58,1.61,1.61,Saved
+18932.31,126,Critical Patient,5,A1,NorthCare Hospital,12.04,2.9,14.94,11.85,14.21,Delayed
+18944.74,128,Fire Injury,4,A2,City General Hospital,6.57,6.83,13.4,7.41,7.41,Saved
+18947.23,129,Critical Patient,5,A3,City General Hospital,3.46,2.9,6.36,4.11,4.11,Saved
+18952.47,130,Critical Patient,5,A1,City General Hospital,3.94,5.15,9.09,3.55,3.55,Saved
+18958.9,131,Minor Injury,2,A3,NorthCare Hospital,7.73,4.11,11.84,6.11,inf,Saved
+18968.1,132,Fire Injury,4,A2,City General Hospital,7.61,4.11,11.72,7.18,7.18,Saved
+18974.68,133,Fire Injury,4,A3,NorthCare Hospital,1.07,9.54,10.6,0.0,0.0,Saved
+18982.8,135,Accident,4,A2,NorthCare Hospital,3.24,2.9,6.14,3.7,3.7,Saved
+18989.92,134,Minor Injury,2,A1,NorthCare Hospital,8.57,7.65,16.22,10.4,10.4,Saved
+18992.79,136,Critical Patient,5,A3,NorthCare Hospital,3.94,6.29,10.23,3.55,3.55,Saved
+19003.84,138,Accident,4,A1,City General Hospital,3.24,2.9,6.14,3.7,3.7,Saved
+19008.55,137,Minor Injury,2,A2,City General Hospital,9.81,9.03,18.84,8.83,10.66,Saved
+19015.11,139,Critical Patient,5,A3,NorthCare Hospital,6.83,6.6,13.43,6.67,7.2,Saved
+19022.4,140,Minor Injury,2,A1,City General Hospital,5.72,7.65,13.37,6.05,6.05,Saved
+19026.16,141,Heart Attack,5,A2,NorthCare Hospital,7.79,1.61,9.4,9.01,10.05,Saved
+19029.97,142,Fire Injury,4,A3,City General Hospital,3.82,1.61,5.43,4.25,4.25,Saved
+19041.36,143,Minor Injury,2,A1,NorthCare Hospital,1.18,10.4,11.58,0.0,0.0,Saved
+19047.99,144,Heart Attack,5,A3,NorthCare Hospital,1.65,6.12,7.78,1.61,1.61,Saved
+19057.88,145,Minor Injury,2,A2,City General Hospital,10.37,2.5,12.87,10.56,10.56,Saved
+19062.24,146,Critical Patient,5,A3,NorthCare Hospital,5.62,2.5,8.12,5.38,5.41,Saved
+19073.28,148,Minor Injury,2,A2,NorthCare Hospital,6.06,2.9,8.96,5.06,inf,Saved
+19074.38,147,Critical Patient,5,A1,NorthCare Hospital,10.58,5.96,16.54,10.62,11.5,Delayed
+19085.6,149,Minor Injury,2,A3,NorthCare Hospital,7.18,5.8,12.98,7.56,8.08,Saved
+19094.06,150,Minor Injury,2,A2,City General Hospital,7.38,3.58,10.96,8.61,8.61,Saved
+19097.91,151,Accident,4,A1,NorthCare Hospital,10.14,1.61,11.76,11.13,11.13,Saved
+19101.17,152,Minor Injury,2,A3,City General Hospital,3.56,6.76,10.32,3.86,5.4,Saved
+19114.51,153,Accident,4,A3,NorthCare Hospital,3.48,8.2,11.67,3.95,3.95,Saved
+19115.9,154,Heart Attack,5,A1,NorthCare Hospital,6.7,6.81,13.51,6.12,7.4,Saved
+19128.43,156,Critical Patient,5,A3,City General Hospital,5.18,6.45,11.63,4.5,4.5,Saved
+19133.28,155,Minor Injury,2,A2,NorthCare Hospital,11.88,8.61,20.49,12.04,inf,Saved
+19134.96,157,Heart Attack,5,A1,NorthCare Hospital,6.68,1.61,8.29,6.45,6.45,Saved
+19143.96,158,Fire Injury,4,A3,City General Hospital,3.24,8.48,11.73,2.9,2.9,Saved
+19151.2,159,Minor Injury,2,A2,NorthCare Hospital,6.82,7.08,13.91,6.31,6.31,Saved
+19165.28,161,Heart Attack,5,A3,NorthCare Hospital,3.36,7.58,10.93,3.06,3.95,Saved
+19165.88,160,Fire Injury,4,A1,City General Hospital,9.43,10.6,20.03,9.65,9.65,Saved
+19178.73,163,Accident,4,A3,City General Hospital,3.53,2.9,6.43,4.11,4.11,Saved
+19181.35,162,Accident,4,A2,City General Hospital,11.76,7.9,19.66,15.22,inf,Saved
+19183.49,164,Minor Injury,2,A1,City General Hospital,4.28,6.83,11.11,4.81,4.81,Saved
+19192.76,165,Critical Patient,5,A3,NorthCare Hospital,3.71,7.81,11.52,4.25,inf,Saved
+19199.47,166,Accident,4,A2,City General Hospital,9.69,5.95,15.64,10.64,11.74,Saved
+19207.62,168,Accident,4,A3,NorthCare Hospital,1.07,9.33,10.39,0.0,0.0,Saved
+19208.36,167,Accident,4,A1,NorthCare Hospital,9.54,8.86,18.4,10.09,13.96,Saved
+19216.24,169,Heart Attack,5,A2,NorthCare Hospital,1.04,7.39,8.43,0.0,0.0,Saved
+19224.62,170,Heart Attack,5,A3,NorthCare Hospital,4.86,9.11,13.97,4.51,5.03,Saved
+19230.53,171,Critical Patient,5,A1,City General Hospital,9.12,4.84,13.96,8.51,11.12,Delayed
+19244.22,172,Fire Injury,4,A2,City General Hospital,6.36,10.76,17.12,6.76,8.6,Saved
+19246.8,173,Accident,4,A3,NorthCare Hospital,10.54,7.4,17.93,9.66,inf,Saved
+19255.4,174,Heart Attack,5,A1,NorthCare Hospital,4.86,9.49,14.35,5.31,5.35,Saved
+19263.43,175,Critical Patient,5,A3,City General Hospital,5.3,6.42,11.73,5.4,7.5,Saved
+19263.89,176,Heart Attack,5,A2,NorthCare Hospital,4.92,3.06,7.99,5.7,5.7,Saved
+19275.56,178,Heart Attack,5,A3,City General Hospital,3.76,1.45,5.21,3.61,3.61,Saved
+19277.14,177,Heart Attack,5,A1,NorthCare Hospital,11.36,5.0,16.37,10.21,11.49,Delayed
+19285.68,179,Accident,4,A2,NorthCare Hospital,2.12,4.35,6.47,2.25,2.25,Saved
+19295.06,180,Heart Attack,5,A3,NorthCare Hospital,1.04,8.66,9.7,0.0,0.0,Saved
+19306.21,181,Accident,4,A2,City General Hospital,7.61,6.17,13.78,6.61,6.61,Saved
+19314.77,182,Critical Patient,5,A1,NorthCare Hospital,10.7,5.95,16.64,10.74,10.74,Delayed
+19317.07,183,Accident,4,A3,City General Hospital,3.48,8.12,11.6,3.06,3.06,Saved
+19323.45,184,Minor Injury,2,A2,NorthCare Hospital,2.09,6.45,8.55,1.45,1.45,Saved
+19330.62,185,Minor Injury,2,A3,City General Hospital,1.18,6.16,7.35,0.0,0.0,Saved
+19339.12,186,Fire Injury,4,A1,City General Hospital,6.67,1.61,8.28,8.25,8.25,Saved
+19346.65,187,Heart Attack,5,A3,NorthCare Hospital,5.62,3.95,9.57,5.38,inf,Saved
+19352.78,188,Critical Patient,5,A1,City General Hospital,4.26,1.45,5.71,5.15,5.15,Saved
+19362.8,189,Fire Injury,4,A3,NorthCare Hospital,5.69,3.95,9.64,5.38,5.41,Saved
+19371.54,190,Accident,4,A2,NorthCare Hospital,5.01,7.65,12.65,4.51,4.55,Saved
+19380.14,191,Heart Attack,5,A1,NorthCare Hospital,7.29,5.95,13.24,6.99,7.03,Saved
+19383.03,192,Fire Injury,4,A3,City General Hospital,3.88,4.35,8.23,3.61,3.61,Saved
+19393.79,193,Fire Injury,4,A2,City General Hospital,5.49,3.92,9.41,6.33,inf,Saved
+19399.68,194,Critical Patient,5,A3,NorthCare Hospital,6.26,6.76,13.02,5.76,6.26,Saved
+19406.51,195,Accident,4,A1,City General Hospital,5.25,5.06,10.31,5.95,5.95,Saved
+19413.08,196,Minor Injury,2,A3,City General Hospital,4.22,6.66,10.88,5.03,5.03,Saved
+19419.6,197,Accident,4,A1,NorthCare Hospital,6.76,1.61,8.37,8.79,8.79,Saved
+19426.05,198,Fire Injury,4,A3,NorthCare Hospital,1.71,7.54,9.25,1.61,1.61,Saved
+19439.22,199,Heart Attack,5,A2,NorthCare Hospital,7.78,6.33,14.1,8.47,8.51,Saved
+19443.41,200,Minor Injury,2,A3,City General Hospital,6.97,4.84,11.8,6.35,6.35,Saved
