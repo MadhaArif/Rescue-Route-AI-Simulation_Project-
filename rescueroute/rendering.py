@@ -74,13 +74,32 @@ def _draw_roads(sim: Simulation, screen: pygame.Surface) -> None:
     for u, v, data in sim.graph.edges(data=True):
         start, end = _edge_points(sim, u, v)
         level = str(data.get("traffic", "Low"))
-        width = {"Low": 4, "Medium": 5, "High": 7, "Blocked": 7}.get(level, 4)
+        width = {"Low": 4, "Medium": 6, "High": 8, "Blocked": 8}.get(level, 4)
+        
+        # Draw road shadow
+        pygame.draw.line(screen, (15, 23, 42, 100), (start[0]+2, start[1]+2), (end[0]+2, end[1]+2), width)
+        
+        # Draw road
         pygame.draw.line(screen, traffic_color(level), start, end, width)
+        
         if level == "Blocked":
             mx = int((start[0] + end[0]) / 2)
             my = int((start[1] + end[1]) / 2)
-            pygame.draw.line(screen, COLORS["danger"], (mx - 8, my - 8), (mx + 8, my + 8), 3)
-            pygame.draw.line(screen, COLORS["danger"], (mx - 8, my + 8), (mx + 8, my - 8), 3)
+            pygame.draw.circle(screen, COLORS["danger"], (mx, my), 8)
+            _draw_center_text(screen, "X", (mx, my), 12, COLORS["white"], bold=True)
+
+    # Weather Overlay
+    if sim.weather == "Rainy":
+        _draw_weather_particles(screen, sim.sim_time, (100, 150, 255, 50))
+    elif sim.weather == "Stormy":
+        _draw_weather_particles(screen, sim.sim_time, (200, 200, 255, 80), density=100)
+
+def _draw_weather_particles(screen: pygame.Surface, time: float, color: tuple, density: int = 50) -> None:
+    # Simple rain effect
+    for i in range(density):
+        x = (i * 1234 + int(time * 500)) % MAP_WIDTH
+        y = (i * 5678 + int(time * 800)) % SCREEN_HEIGHT
+        pygame.draw.line(screen, color, (x, y), (x - 2, y + 10), 1)
 
 
 def _route_color(status: str) -> tuple[int, int, int]:
@@ -118,13 +137,22 @@ def _draw_nodes(sim: Simulation, screen: pygame.Surface) -> None:
 def _draw_hospitals(sim: Simulation, screen: pygame.Surface) -> None:
     for hospital in sim.hospitals:
         x, y = sim.graph.nodes[hospital.node]["pos"]
-        rect = pygame.Rect(x - 22, y - 22, 44, 44)
-        pygame.draw.rect(screen, COLORS["hospital"], rect, border_radius=8)
-        pygame.draw.rect(screen, COLORS["white"], rect, 3, border_radius=8)
-        _draw_center_text(screen, "H", (x, y - 2), 24, COLORS["white"], bold=True)
+        # Outer Glow
+        pygame.draw.circle(screen, (*COLORS["hospital"], 50), (x, y), 35, 15)
+        
+        rect = pygame.Rect(x - 24, y - 24, 48, 48)
+        pygame.draw.rect(screen, COLORS["hospital"], rect, border_radius=12)
+        pygame.draw.rect(screen, COLORS["white"], rect, 2, border_radius=12)
+        
+        # Red Cross Icon
+        cx, cy = x, y - 4
+        pygame.draw.rect(screen, COLORS["white"], (cx - 10, cy - 3, 20, 6))
+        pygame.draw.rect(screen, COLORS["white"], (cx - 3, cy - 10, 6, 20))
+        
         label = hospital.name.split()[0]
-        _draw_center_text(screen, label, (x, y + 34), 13, COLORS["black"], bold=True)
-        _draw_center_text(screen, f"{hospital.beds_available}/{hospital.beds_total} beds", (x, y + 50), 12, COLORS["hospital"])
+        _draw_center_text(screen, label, (x, y + 36), 14, COLORS["panel_text"], bold=True)
+        beds_color = COLORS["success"] if hospital.beds_available > 2 else COLORS["danger"]
+        _draw_center_text(screen, f"{hospital.beds_available}/{hospital.beds_total}", (x, y + 52), 12, beds_color, bold=True)
 
 
 def _draw_stations(sim: Simulation, screen: pygame.Surface) -> None:
@@ -142,22 +170,36 @@ def _draw_emergencies(sim: Simulation, screen: pygame.Surface) -> None:
             continue
         x, y = sim.graph.nodes[emergency.node]["pos"]
         color = EMERGENCY_TYPES.get(emergency.event_type, {}).get("color", COLORS["danger"])
-        pulse = 2 if int(sim.sim_time * 2) % 2 == 0 else 0
-        pygame.draw.circle(screen, color, (x, y), 17 + pulse)
-        pygame.draw.circle(screen, COLORS["white"], (x, y), 17 + pulse, 3)
-        _draw_center_text(screen, "!", (x, y - 1), 24, COLORS["white"], bold=True)
-        _draw_center_text(screen, f"#{emergency.emergency_id}", (x, y + 31), 13, COLORS["danger"], bold=True)
+        
+        # Sonar Pulse Effect
+        pulse_size = (int(sim.sim_time * 60) % 30)
+        pygame.draw.circle(screen, (*color, 100 - pulse_size * 3), (x, y), 15 + pulse_size, 2)
+        
+        pygame.draw.circle(screen, color, (x, y), 18)
+        pygame.draw.circle(screen, COLORS["white"], (x, y), 18, 2)
+        _draw_center_text(screen, "!", (x, y - 1), 22, COLORS["white"], bold=True)
+        _draw_center_text(screen, f"#{emergency.emergency_id}", (x, y + 32), 12, color, bold=True)
 
 
 def _draw_ambulances(sim: Simulation, screen: pygame.Surface) -> None:
     for ambulance in sim.ambulances:
         x, y = int(ambulance.x), int(ambulance.y)
-        rect = pygame.Rect(x - 18, y - 12, 36, 24)
-        pygame.draw.rect(screen, COLORS["ambulance"], rect, border_radius=6)
-        pygame.draw.rect(screen, COLORS["ambulance_outline"], rect, 3, border_radius=6)
-        pygame.draw.rect(screen, COLORS["danger"], pygame.Rect(x - 3, y - 9, 6, 18))
-        pygame.draw.rect(screen, COLORS["danger"], pygame.Rect(x - 10, y - 2, 20, 6))
-        _draw_center_text(screen, ambulance.ambulance_id, (x, y + 23), 13, COLORS["ambulance_outline"], bold=True)
+        
+        # Flashing Siren
+        if ambulance.status != "idle":
+            siren_color = COLORS["danger"] if int(sim.sim_time * 10) % 2 == 0 else COLORS["route"]
+            pygame.draw.circle(screen, (*siren_color, 100), (x, y - 15), 12, 4)
+            
+        # Vehicle Body
+        rect = pygame.Rect(x - 20, y - 10, 40, 20)
+        pygame.draw.rect(screen, COLORS["white"], rect, border_radius=4)
+        pygame.draw.rect(screen, COLORS["ambulance_outline"], rect, 2, border_radius=4)
+        
+        # Stripes
+        pygame.draw.rect(screen, COLORS["danger"], (x - 15, y - 2, 30, 4))
+        
+        # ID Label
+        _draw_center_text(screen, ambulance.ambulance_id, (x, y + 22), 12, COLORS["panel_text"], bold=True)
 
 
 def _draw_legend(screen: pygame.Surface) -> None:
@@ -204,15 +246,26 @@ def _draw_side_panel(sim: Simulation, screen: pygame.Surface) -> None:
 
     _draw_text(screen, "Live KPIs", (x, y), 18, COLORS["panel_text"], bold=True)
     y += 28
+    
+    rush_text = "YES" if sim.is_rush_hour else "NO"
+    rush_color = COLORS["danger"] if sim.is_rush_hour else COLORS["success"]
+    
     kpis = [
+        ("Weather", sim.weather),
+        ("Rush Hour", rush_text),
         ("Avg response", _format_minutes(sim.avg_response_minutes)),
         ("Available ambulances", str(sim.available_ambulances)),
         ("Open hospital beds", str(sim.open_beds)),
-        ("Generated cases", str(sim.generated_cases)),
     ]
     for label, value in kpis:
+        val_color = COLORS["panel_text"]
+        if label == "Rush Hour":
+            val_color = COLORS["danger"] if value == "YES" else COLORS["success"]
+        elif label == "Weather":
+            val_color = COLORS["warning"] if value != "Clear" else COLORS["panel_text"]
+            
         _draw_text(screen, label, (x, y), 14, COLORS["muted_text"])
-        _draw_text(screen, value, (x + 170, y), 14, COLORS["panel_text"], bold=True)
+        _draw_text(screen, value, (x + 170, y), 14, val_color, bold=True)
         y += 22
 
     y += 8
