@@ -10,6 +10,7 @@ build/
 .venv/
 env/
 env312/
+venv_macos/
 .DS_Store
 *.swp
 *.swo
